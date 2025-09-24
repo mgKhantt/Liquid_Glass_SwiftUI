@@ -8,17 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            Form {
+                Section("Pre Liquid Glass"){
+                    LabeledContent("None") {
+                        
+                    }
+                    LabeledContent("Borderless") {
+                        
+                    }
+                    LabeledContent("Plain") {
+                        
+                    }
+                    LabeledContent("Bordered") {
+                        
+                    }
+                    LabeledContent("Bordered Prominent") {
+                        
+                    }
+                }
+                Section("Liquid Glass") {
+                    LabeledContent("Glass") {
+                        
+                    }
+                    LabeledContent("Glass Prominent") {
+                        
+                    }
+                }
+            }
+            .navigationTitle("Buttons")
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
 }
+
