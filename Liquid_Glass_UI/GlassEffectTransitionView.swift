@@ -53,9 +53,10 @@ struct GlassEffectTransitionView: View {
                                 .glassEffectID("text", in: nameSpaceText)
                                 .glassEffectTransition(.matchedGeometry)
                         }
-                        Image(systemName: "plus")
+                        Image(systemName: isExpanded ? "checkmark" : "plus")
                             .font(.system(size: 36))
                             .frame(width: 80, height: 80)
+                            .contentTransition(.symbolEffect)
                             .glassEffect(.regular.interactive())
                             .glassEffectID("plus", in: nameSpaceText)
                             .onTapGesture {
