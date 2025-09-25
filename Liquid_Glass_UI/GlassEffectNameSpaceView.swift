@@ -26,6 +26,7 @@ struct GlassEffectNameSpaceView: View {
                             .frame(width: 80, height: 80)
                             .glassEffect()
                             .glassEffectUnion(id: 1, namespace: nameSpace)
+                            
                         Group {
                             Image(systemName: "cloud.bolt.rain.fill")
                                 .font(.system(size: 36))
